@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>esha ali</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>This is tab content section</h1>
+	<button id="defaultOpen" class="tablink" onclick="openCity('London',this,'green')">London</button>
+	<button class="tablink" onclick="openCity('Paris',this,'red')">Paris</button>
+	<button class="tablink" onclick="openCity('Tokyo',this,'yellow')">Tokyo</button>
+	<button class="tablink" onclick="openCity('Oslo',this,'blue')">Oslo</button>
+	<div class="tabcontent" id="London">
+		<h1>London</h1>
+		<p>London is the capital city of England.</p>
+	</div>
+	<div class="tabcontent" id="Paris">
+		<h1>Paris</h1>
+		<p>Paris is the capital city of France.</p>
+	</div>
+	<div class="tabcontent" id="Tokyo">
+		<h1>Tokyo</h1>
+		<p>Tokyo is the capital city of Japan.</p>
+	</div>
+	<div class="tabcontent" id="Oslo">
+		<h1>Oslo</h1>
+		<p>Oslo is the capital city of Norway.</p>
+	</div>
+	<script>
+		function openCity(cityName,element,color) {
+			var i,tabcontent,tablink;
+			tabcontent=document.getElementsByClassName('tabcontent');
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display="none";
+			}
+			tablink=document.getElementsByClassName('tablink');
+			for (i = 0; i < tablink.length; i++) {
+				tablink[i].style.backgroundColor="";
+			}
+			document.getElementById(cityName).style.display="block";
+			element.style.backgroundColor=color;
+		}
+		document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+body{
+	font-family: arial;
+	font-size: 16px;
+	line-height: 18px;
+	background: #eee;
+}
+.template {
+	width: 960px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px #bbb;
+	border-radius: 10px;
+}
+.clear{
+	overflow: hidden;
+}
+.headsection {
+	height: 100px;
+	background: #FF8686;
+}
+.title{
+	float:left;
+	width: 300px;
+}
+.title h1 {
+	font-size: 47px;
+	color: #c57070;
+	padding-left: 25px;
+	margin-top: 36px;
+}
+.title h1:hover {
+	color: #f00;
+	text-shadow: 5px 5px 5px #895252;
+}
+.exta{
+	 color: #fff;
+}
+.manu {
+	color:#a27474;
+	float: right;
+	width: 433px;
+	margin-top: 39px;
+}
+.manu a {
+	color: #a66;
+	text-decoration: none;
+	padding: 17px;
+}
+.manu a:hover,#active{
+	color: #f00;
+}
+.mainsection {
+	background: #fff;
+}
+.maintop {
+	margin: 25px 50px;
+	border-bottom: 2px dotted #ccc;
+}
+.maintop h2 {
+	font-size: 36px;
+	color: #333;
+}
+.maintop h3 {
+	font-size: 26px;
+	color: #ccc;
+}
+.content {
+	margin: 0px 33px;
+}
+.descriptionsection{
+	text-align: center;
+}
+.descriptionsection p {
+	
+	
+}
+.midcontentsection {
+	width: 861px;
+
+background: #f9d6d6;
+background: -moz-linear-gradient(left, #f9d6d6 1%, #ffffff 100%, #7db9e8 100%); 
+background: -webkit-linear-gradient(left, #f9d6d6 1%,#ffffff 100%,#7db9e8 100%);
+background: linear-gradient(to right, #f9d6d6 1%,#ffffff 100%,#7db9e8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9d6d6', endColorstr='#7db9e8',GradientType=1 ); 
+	border-radius: 17px;
+	box-shadow: 5px 2px 5px 5px #ccc;
+	margin-bottom: 13px;
+}
+.medleftsection {
+	float: left;
+	width: 446px;
+	padding: 34px;
+	text-align: center;
+}
+.medleftsection h2 {
+	font-size: 32px;
+	border-bottom: 6px dotted #ffc1c1;
+	padding-bottom: 21px;
+	width: 258px;
+	margin-left: 96px;
+	color: #ff7979;
+}
+.medleftsection p{}
+.midimgsection {
+	padding: 14px 20px;
+}
+.midimgsection img {
+	width: 216px;
+	height: 241px;
+	float: right;
+}
+.post {
+	margin: 0 50px;
+	border-bottom: 3px dotted #bbb;
+	padding-bottom: 16px;
+	margin-bottom: 15px;
+	margin-top: 30px;
+}
+.samepost {
+	background: #efefef;
+	background: -moz-linear-gradient(top, #efefef 0%, #f7dcdc 47%, #f9d6d6 100%);
+	background: -webkit-linear-gradient(top, #efefef 0%,#f7dcdc 47%,#f9d6d6 100%);
+	background: linear-gradient(to bottom, #efefef 0%,#f7dcdc 47%,#f9d6d6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#f9d6d6',GradientType=0 );
+	float: left;
+	margin-left: 70px;
+	padding: 5px 15px;
+	width: 210px;
+	border-radius: 10px;
+}
+.allpost {
+	margin-left: -70px;
+}
+.samepost h2 {
+	color: #ff7171;
+	text-align: center;
+	border-bottom: 3px dotted #ff8484;
+	padding-bottom: 10px;
+	width: 164px;
+	margin-left: 17px;
+	text-shadow: 5px 5px 5px #c0c0c0;
+}
+.samepost p {
+	text-align: justify;
+	color: #443e3e;
+}
+.postlink {
+	text-align: center;
+	padding: 8px;
+	margin: 7px 30px;
+	background-image: linear-gradient(#ffffffe6,#e4a8a8 50%, #fff);
+	border-radius: 19px;
+}
+.postlink a {
+	text-decoration: none;
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.fotersection {
+    background: #fff;
+}
+.footprotion {
+	margin: 0px 50px 15px 50px;
+	text-align: center;
+	color: #777;
+}
+.footprotion p{
+	margin: 0px;
+}
+.footprotion p a{
+	color: #777;
+}
+.footprotion p a:hover{
+	color: #feaeae;
+	text-decoration: none;
+}
+/*Responsive design*/
+@media only screen and (min-width: 480px) and (max-width: 768px){
+.template {width: 760px;}
+.title{width: 310px;}
+.midleft{margin-right:15px; width: 240px;}
+.samepost {	margin-left: 21px;	padding: 5px 24px;	width: 156px;	border-radius: 10px;}
+.allpost {margin-left: -16px;}
+.midimgsection {
+	width: 237px;
+	margin-top: -4px;
+}
+.midcontentsection {width: 682px;}
+.medleftsection {width: 337px;}
+.medleftsection h2 {
+	width: 250px;
+	margin-left: 0;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	padding-bottom: 20px;
+}
+}
+@media only screen (min-width: 320px) and (max-width: 360px){
+.template {width: 350px;}
+}
+@media only screen (min-width: 240px) and (max-width: 319px){
+.template {width: 300px;}
+}
